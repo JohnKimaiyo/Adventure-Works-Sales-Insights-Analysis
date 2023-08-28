@@ -16,3 +16,8 @@ SELECT max([ActualCost])
   /****** Script for SelectTopNRows command from SSMS  ******/
 SELECT max([OrderQty])
   FROM [AdventureWorks2016].[Production].[WorkOrder]
+
+
+  /****** Script for SelectTopNRows command from SSMS  ******/
+SELECT max ([StandardPrice]) [ProductID]
+  FROM [AdventureWorks2016].[Purchasing].[ProductVendor]
