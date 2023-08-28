@@ -4,3 +4,7 @@ SELECT max([Rate]) FROM [AdventureWorks2016].[HumanResources].[EmployeePayHistor
 /****** Script for SelectTopNRows command from SSMS  ******/
 SELECT MAX([StandardCost]) 
   FROM [AdventureWorks2016].[Production].[ProductCostHistory]
+
+  /****** Script for SelectTopNRows command from SSMS  ******/
+SELECT max([Quantity])
+  FROM [AdventureWorks2016].[Production].[ProductInventory]
