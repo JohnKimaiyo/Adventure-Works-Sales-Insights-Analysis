@@ -21,3 +21,10 @@ SELECT max([OrderQty])
   /****** Script for SelectTopNRows command from SSMS  ******/
 SELECT max ([StandardPrice]) [ProductID]
   FROM [AdventureWorks2016].[Purchasing].[ProductVendor]
+
+  /****** Script for SelectTopNRows command from SSMS  ******/
+SELECT max([SalesYTD]) FROM [AdventureWorks2016].[Sales].[SalesTerritory]
+
+ WHERE  [SalesYTD]<( select max([SalesYTD])
+  FROM [AdventureWorks2016].[Sales].[SalesTerritory]
+);
