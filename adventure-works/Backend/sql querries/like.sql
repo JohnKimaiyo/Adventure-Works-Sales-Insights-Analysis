@@ -10,3 +10,10 @@ SELECT [JobTitle]
       ,[ModifiedDate]
   FROM [AdventureWorks2016].[HumanResources].[Employee]
   where [JobTitle] like 'M%'
+
+  /****** Script for SelectTopNRows command from SSMS  ******/
+SELECT TOP (1000) [ContactTypeID]
+      ,[Name]
+      ,[ModifiedDate]
+  FROM [AdventureWorks2016].[Person].[ContactType]
+  WHERE [Name] like 'M%'
