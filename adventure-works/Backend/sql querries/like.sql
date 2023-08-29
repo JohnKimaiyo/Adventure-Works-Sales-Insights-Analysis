@@ -151,3 +151,10 @@ SELECT TOP (1000) [ProductSubcategoryID]
       ,[ModifiedDate]
   FROM [AdventureWorks2016].[Production].[ProductSubcategory]
   WHERE [Name] like 'R%';
+
+  /****** Script for SelectTopNRows command from SSMS  ******/
+SELECT TOP (1000) [UnitMeasureCode]
+      ,[Name]
+      ,[ModifiedDate]
+  FROM [AdventureWorks2016].[Production].[UnitMeasure]
+  WHERE [Name] like 'C%';
