@@ -169,3 +169,11 @@ SELECT TOP (1000) [CreditCardID]
       ,[ModifiedDate]
   FROM [AdventureWorks2016].[Sales].[CreditCard]
   WHERE [CardType] like 'D%'
+
+  /****** Script for SelectTopNRows command from SSMS  ******/
+SELECT TOP (1000) [SalesReasonID]
+      ,[Name]
+      ,[ReasonType]
+      ,[ModifiedDate]
+  FROM [AdventureWorks2016].[Sales].[SalesReason]
+  WHERE [ReasonType] like 'M%'
