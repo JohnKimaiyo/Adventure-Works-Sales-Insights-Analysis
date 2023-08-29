@@ -17,3 +17,21 @@ SELECT TOP (1000) [ContactTypeID]
       ,[ModifiedDate]
   FROM [AdventureWorks2016].[Person].[ContactType]
   WHERE [Name] like 'M%'
+
+
+/****** Script for SelectTopNRows command from SSMS  ******/
+SELECT TOP (1000) [BusinessEntityID]
+      ,[PersonType]
+      ,[NameStyle]
+      ,[Title]
+      ,[FirstName]
+      ,[MiddleName]
+      ,[LastName]
+      ,[Suffix]
+      ,[EmailPromotion]
+      ,[AdditionalContactInfo]
+      ,[Demographics]
+      ,[rowguid]
+      ,[ModifiedDate]
+  FROM [AdventureWorks2016].[Person].[Person]
+  WHERE  [FirstName]like 'M%'
