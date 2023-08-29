@@ -142,3 +142,12 @@ SELECT TOP (1000) [StateProvinceID]
       ,[ModifiedDate]
   FROM [AdventureWorks2016].[Person].[StateProvince]
   WHERE [Name] like '___';
+
+  /****** Script for SelectTopNRows command from SSMS  ******/
+SELECT TOP (1000) [ProductSubcategoryID]
+      ,[ProductCategoryID]
+      ,[Name]
+      ,[rowguid]
+      ,[ModifiedDate]
+  FROM [AdventureWorks2016].[Production].[ProductSubcategory]
+  WHERE [Name] like 'R%';
