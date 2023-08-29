@@ -35,3 +35,21 @@ SELECT TOP (1000) [BusinessEntityID]
       ,[ModifiedDate]
   FROM [AdventureWorks2016].[Person].[Person]
   WHERE  [FirstName]like 'M%'
+
+  /****** Script for SelectTopNRows command from SSMS  ******/
+SELECT TOP (1000) [FactCallCenterID]
+      ,[DateKey]
+      ,[WageType]
+      ,[Shift]
+      ,[LevelOneOperators]
+      ,[LevelTwoOperators]
+      ,[TotalOperators]
+      ,[Calls]
+      ,[AutomaticResponses]
+      ,[Orders]
+      ,[IssuesRaised]
+      ,[AverageTimePerIssue]
+      ,[ServiceGrade]
+      ,[Date]
+  FROM [AdventureWorksDW2016].[dbo].[FactCallCenter]
+  WHERE  [WageType]like 'W%'
