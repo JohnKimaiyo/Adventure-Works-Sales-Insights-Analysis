@@ -158,3 +158,14 @@ SELECT TOP (1000) [UnitMeasureCode]
       ,[ModifiedDate]
   FROM [AdventureWorks2016].[Production].[UnitMeasure]
   WHERE [Name] like 'C%';
+
+
+  /****** Script for SelectTopNRows command from SSMS  ******/
+SELECT TOP (1000) [CreditCardID]
+      ,[CardType]
+      ,[CardNumber]
+      ,[ExpMonth]
+      ,[ExpYear]
+      ,[ModifiedDate]
+  FROM [AdventureWorks2016].[Sales].[CreditCard]
+  WHERE [CardType] like 'D%'
