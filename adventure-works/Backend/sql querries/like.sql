@@ -112,3 +112,21 @@ SELECT TOP (1000) [CountryRegionCode]
       ,[ModifiedDate]
   FROM [AdventureWorks2016].[Person].[CountryRegion]
   WHERE [Name] like '_____';
+
+
+/****** Script for SelectTopNRows command from SSMS  ******/
+SELECT TOP (1000) [BusinessEntityID]
+      ,[PersonType]
+      ,[NameStyle]
+      ,[Title]
+      ,[FirstName]
+      ,[MiddleName]
+      ,[LastName]
+      ,[Suffix]
+      ,[EmailPromotion]
+      ,[AdditionalContactInfo]
+      ,[Demographics]
+      ,[rowguid]
+      ,[ModifiedDate]
+  FROM [AdventureWorks2016].[Person].[Person]
+  WHERE [LastName] like '___';
