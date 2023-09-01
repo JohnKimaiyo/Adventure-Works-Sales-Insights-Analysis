@@ -16,4 +16,4 @@ SELECT TOP (1000) [BusinessEntityID]
       ,[rowguid]
       ,[ModifiedDate]
   FROM [AdventureWorks2016].[HumanResources].[Employee]
-  WHERE [MaritalStatus] = 's';
+  WHERE year(BirthDate) = '1985'
