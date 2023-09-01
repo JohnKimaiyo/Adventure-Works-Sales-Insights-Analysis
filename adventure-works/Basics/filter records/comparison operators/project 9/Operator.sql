@@ -20,4 +20,4 @@ SELECT TOP (1000) [StateProvinceID]
       ,[rowguid]
       ,[ModifiedDate]
   FROM [AdventureWorks2016].[Person].[StateProvince]
-  WHERE CountryRegionCode <> 'US';
+  WHERE CountryRegionCode != 'US';
