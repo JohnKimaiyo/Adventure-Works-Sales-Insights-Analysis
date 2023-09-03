@@ -56,3 +56,14 @@ SELECT TOP (1000) [StateProvinceID]
   FROM [AdventureWorks2016].[Person].[StateProvince]
   WHERE StateProvinceCode<>CountryRegionCode
   
+  /****** Script for SelectTopNRows command from SSMS  ******/
+SELECT TOP (1000) [StateProvinceID]
+      ,[StateProvinceCode]
+      ,[CountryRegionCode]
+      ,[IsOnlyStateProvinceFlag]
+      ,[Name]
+      ,[TerritoryID]
+      ,[rowguid]
+      ,[ModifiedDate]
+  FROM [AdventureWorks2016].[Person].[StateProvince]
+  WHERE StateProvinceID<30;
