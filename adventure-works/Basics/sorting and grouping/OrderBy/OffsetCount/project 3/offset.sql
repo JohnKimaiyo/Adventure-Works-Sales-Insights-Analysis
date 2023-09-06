@@ -29,3 +29,15 @@ SELECT [BusinessEntityID]
   order by NationalIDNumber 
   OFFSET 5 ROWS
   FETCH NEXT 10 ROWS ONLY;
+
+  /****** Script for SelectTopNRows command from SSMS  ******/
+SELECT  [BusinessEntityID]
+      ,[DepartmentID]
+      ,[ShiftID]
+      ,[StartDate]
+      ,[EndDate]
+      ,[ModifiedDate]
+  FROM [AdventureWorks2016].[HumanResources].[EmployeeDepartmentHistory]
+  ORDER BY ModifiedDate DESC
+  OFFSET 0 ROWS
+  FETCH NEXT 5 ROWS ONLY;
