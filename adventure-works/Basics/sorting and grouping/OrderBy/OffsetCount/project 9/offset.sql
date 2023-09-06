@@ -14,3 +14,12 @@ SELECT [ContactTypeID]
   ORDER BY ContactTypeID ASC
   OFFSET 10 ROWS
   FETCH NEXT 10 ROWS ONLY;
+
+  /****** Script for SelectTopNRows command from SSMS  ******/
+SELECT  [ContactTypeID]
+      ,[Name]
+      ,[ModifiedDate]
+  FROM [AdventureWorks2016].[Person].[ContactType]
+  ORDER BY ModifiedDate DESC
+  OFFSET 0 ROWS
+  FETCH NEXT 5 ROWS ONLY;
