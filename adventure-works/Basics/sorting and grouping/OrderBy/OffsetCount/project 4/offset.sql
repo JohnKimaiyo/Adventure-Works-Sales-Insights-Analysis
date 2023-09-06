@@ -19,3 +19,13 @@ SELECT [BusinessEntityID]
   ORDER BY DepartmentID ASC
   OFFSET 5 ROWS
   FETCH NEXT 10 ROWS ONLY;
+
+  /****** Script for SelectTopNRows command from SSMS  ******/
+SELECT [JobCandidateID]
+      ,[BusinessEntityID]
+      ,[Resume]
+      ,[ModifiedDate]
+  FROM [AdventureWorks2016].[HumanResources].[JobCandidate]
+  ORDER BY ModifiedDate DESC
+  OFFSET 0 ROWS
+  FETCH NEXT 5 ROWS ONLY;
