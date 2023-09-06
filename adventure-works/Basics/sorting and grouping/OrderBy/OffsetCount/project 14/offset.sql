@@ -37,3 +37,13 @@ SELECT  [BusinessEntityID]
   ORDER BY BusinessEntityID
   OFFSET 10 ROWS
   FETCH NEXT 10 ROWS ONLY;
+
+/****** Script for SelectTopNRows command from SSMS  ******/
+SELECT  [BusinessEntityID]
+      ,[PhoneNumber]
+      ,[PhoneNumberTypeID]
+      ,[ModifiedDate]
+  FROM [AdventureWorks2016].[Person].[PersonPhone]
+  ORDER BY ModifiedDate DESC
+  OFFSET 0 ROWS 
+  FETCH NEXT 5 ROWS ONLY;
