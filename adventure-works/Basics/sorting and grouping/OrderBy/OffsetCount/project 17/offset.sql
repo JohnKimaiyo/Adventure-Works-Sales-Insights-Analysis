@@ -38,3 +38,23 @@ SELECT [ProductID]
 ORDER  BY ProductID ASC
   OFFSET 10 ROWS
   FETCH NEXT 10 ROWS ONLY;
+
+  /****** Script for SelectTopNRows command from SSMS  ******/
+SELECT [DocumentNode]
+      ,[DocumentLevel]
+      ,[Title]
+      ,[Owner]
+      ,[FolderFlag]
+      ,[FileName]
+      ,[FileExtension]
+      ,[Revision]
+      ,[ChangeNumber]
+      ,[Status]
+      ,[DocumentSummary]
+      ,[Document]
+      ,[rowguid]
+      ,[ModifiedDate]
+  FROM [AdventureWorks2016].[Production].[Document]
+  ORDER BY ModifiedDate
+  OFFSET 0 ROWS
+  FETCH NEXT 10 ROWS ONLY;
