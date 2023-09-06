@@ -18,3 +18,13 @@ SELECT [BusinessEntityID]
   FROM [AdventureWorks2016].[HumanResources].[Employee]
   ORDER BY BusinessEntityID ASC
   OFFSET 5 ROW;
+
+  /****** Script for SelectTopNRows command from SSMS  ******/
+SELECT  [DepartmentID]
+      ,[Name]
+      ,[GroupName]
+      ,[ModifiedDate]
+  FROM [AdventureWorks2016].[HumanResources].[Department]
+  ORDER BY DepartmentID ASC
+  OFFSET 5 ROWS
+  FETCH NEXT 10 ROWS ONLY;
