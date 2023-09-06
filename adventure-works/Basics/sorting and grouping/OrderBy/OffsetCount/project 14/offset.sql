@@ -27,3 +27,13 @@ SELECT [ProductID]
   FROM [AdventureWorks2016].[Production].[Product]
   ORDER BY ProductID DESC
   OFFSET 5 ROW;
+
+  /****** Script for SelectTopNRows command from SSMS  ******/
+SELECT  [BusinessEntityID]
+      ,[PhoneNumber]
+      ,[PhoneNumberTypeID]
+      ,[ModifiedDate]
+  FROM [AdventureWorks2016].[Person].[PersonPhone]
+  ORDER BY BusinessEntityID
+  OFFSET 10 ROWS
+  FETCH NEXT 10 ROWS ONLY;
