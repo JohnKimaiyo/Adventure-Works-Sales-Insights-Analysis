@@ -19,3 +19,17 @@ SELECT  [StateProvinceID]
   ORDER BY StateProvinceID ASC
   OFFSET 10 ROWS
   FETCH NEXT 10 ROWS ONLY;
+
+  /****** Script for SelectTopNRows command from SSMS  ******/
+SELECT [StateProvinceID]
+      ,[StateProvinceCode]
+      ,[CountryRegionCode]
+      ,[IsOnlyStateProvinceFlag]
+      ,[Name]
+      ,[TerritoryID]
+      ,[rowguid]
+      ,[ModifiedDate]
+  FROM [AdventureWorks2016].[Person].[StateProvince]
+  ORDER BY ModifiedDate DESC
+  OFFSET 0 ROWS
+  FETCH NEXT 10 ROWS ONLY;
