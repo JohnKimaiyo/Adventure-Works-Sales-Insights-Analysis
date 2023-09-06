@@ -7,3 +7,14 @@ SELECT [BusinessEntityID]
   FROM [AdventureWorks2016].[Person].[BusinessEntityContact]
   ORDER BY ModifiedDate ASC
   OFFSET  10 ROW;
+
+  /****** Script for SelectTopNRows command from SSMS  ******/
+SELECT [BusinessEntityID]
+      ,[AddressID]
+      ,[AddressTypeID]
+      ,[rowguid]
+      ,[ModifiedDate]
+  FROM [AdventureWorks2016].[Person].[BusinessEntityAddress]
+  ORDER BY BusinessEntityID ASC
+  OFFSET 10 ROWS
+  FETCH NEXT 10 ROWS ONLY;
