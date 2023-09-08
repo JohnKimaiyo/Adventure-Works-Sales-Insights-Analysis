@@ -50,3 +50,9 @@ SELECT ShipBase,CEILING (ShipBase)
 SELECT AverageRate ,CEILING(AverageRate) 
   FROM [AdventureWorks2016].[Sales].[CurrencyRate]
   WHERE AverageRate>0;
+
+
+  /****** Script for SelectTopNRows command from SSMS  ******/
+SELECT UnitPrice,(UnitPrice) 
+  FROM [AdventureWorks2016].[Sales].[SalesOrderDetail]
+  WHERE UnitPrice>0;
