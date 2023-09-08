@@ -13,3 +13,9 @@ SELECT CostRate,CEILING (CostRate)
 SELECT StandardCost,CEILING (StandardCost) 
   FROM [AdventureWorks2016].[Production].[ProductCostHistory]
   WHERE StandardCost>0
+
+
+  /****** Script for SelectTopNRows command from SSMS  ******/
+SELECT ListPrice,CEILING (ListPrice)
+  FROM [AdventureWorks2016].[Production].[ProductListPriceHistory]
+  where ListPrice > 0;
