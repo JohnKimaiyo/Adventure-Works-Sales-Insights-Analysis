@@ -3,3 +3,8 @@ SELECT Rate,CEILING(Rate)
 
   FROM [AdventureWorks2016].[HumanResources].[EmployeePayHistory]
   WHERE Rate >0;
+
+  /****** Script for SelectTopNRows command from SSMS  ******/
+SELECT CostRate,CEILING (CostRate)
+  FROM [AdventureWorks2016].[Production].[Location]
+  WHERE CostRate> 0;
