@@ -45,3 +45,8 @@ SELECT TaxAmt,CEILING(TaxAmt)
 SELECT ShipBase,CEILING (ShipBase) 
   FROM [AdventureWorks2016].[Purchasing].[ShipMethod]
   WHERE ShipBase >0;
+
+  /****** Script for SelectTopNRows command from SSMS  ******/
+SELECT AverageRate ,CEILING(AverageRate) 
+  FROM [AdventureWorks2016].[Sales].[CurrencyRate]
+  WHERE AverageRate>0;
