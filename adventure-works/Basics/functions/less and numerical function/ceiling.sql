@@ -40,3 +40,8 @@ SELECT LineTotal,CEILING (LineTotal)
 SELECT TaxAmt,CEILING(TaxAmt) 
   FROM [AdventureWorks2016].[Purchasing].[PurchaseOrderHeader]
   WHERE TaxAmt>0;
+
+  /****** Script for SelectTopNRows command from SSMS  ******/
+SELECT ShipBase,CEILING (ShipBase) 
+  FROM [AdventureWorks2016].[Purchasing].[ShipMethod]
+  WHERE ShipBase >0;
