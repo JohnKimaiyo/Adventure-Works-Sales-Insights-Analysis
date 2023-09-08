@@ -8,3 +8,8 @@ SELECT Rate,CEILING(Rate)
 SELECT CostRate,CEILING (CostRate)
   FROM [AdventureWorks2016].[Production].[Location]
   WHERE CostRate> 0;
+
+  /****** Script for SelectTopNRows command from SSMS  ******/
+SELECT StandardCost,CEILING (StandardCost) 
+  FROM [AdventureWorks2016].[Production].[ProductCostHistory]
+  WHERE StandardCost>0
