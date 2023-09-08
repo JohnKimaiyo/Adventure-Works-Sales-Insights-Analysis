@@ -29,3 +29,9 @@ SELECT ActualCost ,CEILING(ActualCost)
 SELECT   LastReceiptCost        , CEILING(LastReceiptCost) 
   FROM [AdventureWorks2016].[Purchasing].[ProductVendor]
   WHERE LastReceiptCost >0;
+
+  /****** Script for SelectTopNRows command from SSMS  ******/
+SELECT LineTotal,CEILING (LineTotal) 
+  FROM [AdventureWorks2016].[Purchasing].[PurchaseOrderDetail]
+
+  WHERE LineTotal>0;
