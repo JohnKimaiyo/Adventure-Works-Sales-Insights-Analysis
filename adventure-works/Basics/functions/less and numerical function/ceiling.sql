@@ -24,3 +24,8 @@ SELECT ListPrice,CEILING (ListPrice)
 SELECT ActualCost ,CEILING(ActualCost) 
   FROM [AdventureWorks2016].[Production].[TransactionHistoryArchive]
   WHERE ActualCost >0;
+
+  /****** Script for SelectTopNRows command from SSMS  ******/
+SELECT   LastReceiptCost        , CEILING(LastReceiptCost) 
+  FROM [AdventureWorks2016].[Purchasing].[ProductVendor]
+  WHERE LastReceiptCost >0;
