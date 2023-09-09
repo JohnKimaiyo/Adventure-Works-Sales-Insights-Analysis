@@ -70,3 +70,20 @@ SELECT  [AddressID]
 	  ,year(ModifiedDate) AS ExtractYear
   FROM [AdventureWorks2016].[Person].[Address]
   ORDER BY ExtractYear DESC;
+
+  /****** Script for SelectTopNRows command from SSMS  ******/
+SELECT  [AddressTypeID]
+      ,[Name]
+      ,[rowguid]
+      ,[ModifiedDate]
+	  ,year(ModifiedDate) AS ExtractedYear 
+  FROM [AdventureWorks2016].[Person].[AddressType]
+  ORDER BY ExtractedYear DESC;
+
+  /****** Script for SelectTopNRows command from SSMS  ******/
+SELECT [BusinessEntityID]
+      ,[rowguid]
+      ,[ModifiedDate]
+	  ,year(ModifiedDate) AS ExtractYear
+  FROM [AdventureWorks2016].[Person].[BusinessEntity]
+  ORDER BY ExtractYear DESC;
