@@ -46,3 +46,13 @@ SELECT  [BusinessEntityID]
 	  ,year(ModifiedDate) AS ExtractYear
   FROM [AdventureWorks2016].[HumanResources].[EmployeePayHistory]
   ORDER BY ExtractYear DESC;
+
+  /****** Script for SelectTopNRows command from SSMS  ******/
+SELECT  [ShiftID]
+      ,[Name]
+      ,[StartTime]
+      ,[EndTime]
+      ,[ModifiedDate]
+	  ,year(ModifiedDate) AS ExtractYear 
+  FROM [AdventureWorks2016].[HumanResources].[Shift]
+  ORDER BY ExtractYear DESC;
