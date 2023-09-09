@@ -9,3 +9,8 @@ SELECT Rate,FLOOR(Rate)
      
   FROM [AdventureWorks2016].[HumanResources].[EmployeePayHistory]
   WHERE Rate > 0;
+
+  /****** Script for SelectTopNRows command from SSMS  ******/
+SELECT StandardCost,FLOOR(StandardCost) 
+  FROM [AdventureWorks2016].[Production].[ProductCostHistory]
+  WHERE StandardCost >0;
