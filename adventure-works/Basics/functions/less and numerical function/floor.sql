@@ -14,3 +14,10 @@ SELECT Rate,FLOOR(Rate)
 SELECT StandardCost,FLOOR(StandardCost) 
   FROM [AdventureWorks2016].[Production].[ProductCostHistory]
   WHERE StandardCost >0;
+
+/****** Script for SelectTopNRows command from SSMS  ******/
+SELECT ListPrice, FLOOR(ListPrice) 
+
+      
+  FROM [AdventureWorks2016].[Production].[ProductListPriceHistory]
+ WHERE  ListPrice > 0;
