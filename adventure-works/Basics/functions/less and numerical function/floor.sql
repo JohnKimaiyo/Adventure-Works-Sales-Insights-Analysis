@@ -41,3 +41,8 @@ SELECT UnitPrice, FLOOR(UnitPrice)
   WHERE UnitPrice > 0;
 
     WHERE Subtotal >0;
+
+    /****** Script for SelectTopNRows command from SSMS  ******/
+SELECT AverageRate,FLOOR(AverageRate) 
+  FROM [AdventureWorks2016].[Sales].[CurrencyRate]
+WHERE  AverageRate>0;
