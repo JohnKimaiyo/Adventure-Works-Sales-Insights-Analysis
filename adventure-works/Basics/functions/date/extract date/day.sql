@@ -56,3 +56,17 @@ SELECT  [ShiftID]
 	  ,year(ModifiedDate) AS ExtractYear 
   FROM [AdventureWorks2016].[HumanResources].[Shift]
   ORDER BY ExtractYear DESC;
+
+  /****** Script for SelectTopNRows command from SSMS  ******/
+SELECT  [AddressID]
+      ,[AddressLine1]
+      ,[AddressLine2]
+      ,[City]
+      ,[StateProvinceID]
+      ,[PostalCode]
+      ,[SpatialLocation]
+      ,[rowguid]
+      ,[ModifiedDate]
+	  ,year(ModifiedDate) AS ExtractYear
+  FROM [AdventureWorks2016].[Person].[Address]
+  ORDER BY ExtractYear DESC;
