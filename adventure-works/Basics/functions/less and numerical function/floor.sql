@@ -21,3 +21,10 @@ SELECT ListPrice, FLOOR(ListPrice)
       
   FROM [AdventureWorks2016].[Production].[ProductListPriceHistory]
  WHERE  ListPrice > 0;
+
+/****** Script for SelectTopNRows command from SSMS  ******/
+ 
+SELECT ActualCost,FLOOR(ActualCost )
+ 
+  FROM [AdventureWorks2016].[Production].[WorkOrderRouting]
+  WHERE ActualCost>0;
