@@ -56,3 +56,7 @@ SELECT TaxAmt ,FLOOR(TaxAmt)
 SELECT   AverageRate,FLOOR(AverageRate)
   FROM [AdventureWorks2016].[Sales].[CurrencyRate]
   WHERE AverageRate>0;
+
+  SELECT  SalesLastYear,FLOOR(SalesLastYear) 
+  FROM [AdventureWorks2016].[Sales].[SalesTerritory]
+ WHERE SalesLastYear > 0;
