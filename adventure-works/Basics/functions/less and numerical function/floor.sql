@@ -39,3 +39,5 @@ SELECT StandardPrice, FLOOR(StandardPrice)
 SELECT UnitPrice, FLOOR(UnitPrice) 
   FROM [AdventureWorks2016].[Purchasing].[PurchaseOrderDetail]
   WHERE UnitPrice > 0;
+
+    WHERE Subtotal >0;
