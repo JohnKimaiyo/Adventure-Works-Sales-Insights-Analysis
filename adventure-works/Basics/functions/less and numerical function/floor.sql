@@ -28,3 +28,8 @@ SELECT ActualCost,FLOOR(ActualCost )
  
   FROM [AdventureWorks2016].[Production].[WorkOrderRouting]
   WHERE ActualCost>0;
+
+  /****** Script for SelectTopNRows command from SSMS  ******/
+SELECT StandardPrice, FLOOR(StandardPrice)
+  FROM [AdventureWorks2016].[Purchasing].[ProductVendor]
+  WHERE StandardPrice>0;
