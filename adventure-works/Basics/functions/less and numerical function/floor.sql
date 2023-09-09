@@ -33,3 +33,9 @@ SELECT ActualCost,FLOOR(ActualCost )
 SELECT StandardPrice, FLOOR(StandardPrice)
   FROM [AdventureWorks2016].[Purchasing].[ProductVendor]
   WHERE StandardPrice>0;
+
+
+/****** Script for SelectTopNRows command from SSMS  ******/
+SELECT UnitPrice, FLOOR(UnitPrice) 
+  FROM [AdventureWorks2016].[Purchasing].[PurchaseOrderDetail]
+  WHERE UnitPrice > 0;
