@@ -51,3 +51,8 @@ WHERE  AverageRate>0;
 SELECT TaxAmt ,FLOOR(TaxAmt)
   FROM [AdventureWorks2016].[Sales].[SalesOrderHeader]
   WHERE TaxAmt >0;
+
+  /****** Script for SelectTopNRows command from SSMS  ******/
+SELECT   AverageRate,FLOOR(AverageRate)
+  FROM [AdventureWorks2016].[Sales].[CurrencyRate]
+  WHERE AverageRate>0;
