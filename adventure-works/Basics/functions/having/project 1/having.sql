@@ -25,4 +25,10 @@ SELECT COUNT (Quantity) AS Numberofshaelwithquantityabove10
   GROUP BY Shelf
   HAVING COUNT(Quantity) > 10;
 
-  
+  /****** Script for SelectTopNRows command from SSMS  ******/
+SELECT COUNT(Quantity) ,[ReferenceOrderID]
+    
+     
+  FROM [AdventureWorks2016].[Production].[TransactionHistoryArchive]
+  GROUP BY ReferenceOrderID
+  HAVING COUNT(Quantity) >10;
