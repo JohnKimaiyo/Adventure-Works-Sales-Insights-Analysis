@@ -15,3 +15,12 @@ SELECT COUNT (StandardCost) Numberofstandardcostabove1,[ProductID]
   FROM [AdventureWorks2016].[Production].[ProductCostHistory]
   GROUP BY ProductID
   HAVING COUNT (StandardCost) >1;
+
+  /****** Script for SelectTopNRows command from SSMS  ******/
+SELECT COUNT (Quantity) AS Numberofshaelwithquantityabove10
+
+      ,[Shelf]
+     
+  FROM [AdventureWorks2016].[Production].[ProductInventory]
+  GROUP BY Shelf
+  HAVING COUNT(Quantity) > 10;
