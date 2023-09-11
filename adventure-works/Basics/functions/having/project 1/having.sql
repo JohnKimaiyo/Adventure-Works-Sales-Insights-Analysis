@@ -32,3 +32,11 @@ SELECT COUNT(Quantity) ,[ReferenceOrderID]
   FROM [AdventureWorks2016].[Production].[TransactionHistoryArchive]
   GROUP BY ReferenceOrderID
   HAVING COUNT(Quantity) >10;
+
+  /****** Script for SelectTopNRows command from SSMS  ******/
+SELECT COUNT (OperationSequence) 
+      ,[ProductID]
+      
+  FROM [AdventureWorks2016].[Production].[WorkOrderRouting]
+  GROUP BY ProductID
+  HAVING COUNT(OperationSequence)>1;
