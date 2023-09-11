@@ -63,3 +63,12 @@ SELECT COUNT (SalesQuota), [BusinessEntityID]
   FROM [AdventureWorks2016].[Sales].[SalesPersonQuotaHistory]
   GROUP BY BusinessEntityID
   HAVING COUNT(SalesQuota) >10;
+
+  /****** Script for SelectTopNRows command from SSMS  ******/
+
+SELECT COUNT (TaxRate) 
+      ,Name
+      
+  FROM [AdventureWorks2016].[Sales].[SalesTaxRate]
+  GROUP BY Name
+  Having COUNT(TaxRate) > 5;
