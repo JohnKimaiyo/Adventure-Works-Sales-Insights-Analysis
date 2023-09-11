@@ -55,3 +55,11 @@ SELECT COUNT (SubTotal)
   FROM [AdventureWorks2016].[Purchasing].[PurchaseOrderHeader]
   GROUP BY VendorID
   HAVING COUNT(SubTotal) > 10;
+
+  /****** Script for SelectTopNRows command from SSMS  ******/
+    
+SELECT COUNT (SalesQuota), [BusinessEntityID]
+      
+  FROM [AdventureWorks2016].[Sales].[SalesPersonQuotaHistory]
+  GROUP BY BusinessEntityID
+  HAVING COUNT(SalesQuota) >10;
