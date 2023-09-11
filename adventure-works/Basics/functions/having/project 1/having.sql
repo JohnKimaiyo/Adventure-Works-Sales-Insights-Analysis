@@ -40,3 +40,10 @@ SELECT COUNT (OperationSequence)
   FROM [AdventureWorks2016].[Production].[WorkOrderRouting]
   GROUP BY ProductID
   HAVING COUNT(OperationSequence)>1;
+
+  /****** Script for SelectTopNRows command from SSMS  ******/
+SELECT COUNT (StandardPrice)  ,[BusinessEntityID]
+    
+  FROM [AdventureWorks2016].[Purchasing].[ProductVendor]
+  GROUP BY BusinessEntityID
+  HAVING COUNT(StandardPrice) >10;
