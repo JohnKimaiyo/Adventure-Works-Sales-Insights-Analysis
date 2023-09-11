@@ -47,3 +47,11 @@ SELECT COUNT (StandardPrice)  ,[BusinessEntityID]
   FROM [AdventureWorks2016].[Purchasing].[ProductVendor]
   GROUP BY BusinessEntityID
   HAVING COUNT(StandardPrice) >10;
+
+  /****** Script for SelectTopNRows command from SSMS  ******/
+SELECT COUNT (SubTotal)  
+      ,[VendorID]
+      
+  FROM [AdventureWorks2016].[Purchasing].[PurchaseOrderHeader]
+  GROUP BY VendorID
+  HAVING COUNT(SubTotal) > 10;
