@@ -24,3 +24,5 @@ SELECT COUNT (Quantity) AS Numberofshaelwithquantityabove10
   FROM [AdventureWorks2016].[Production].[ProductInventory]
   GROUP BY Shelf
   HAVING COUNT(Quantity) > 10;
+
+  
